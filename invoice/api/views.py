@@ -59,12 +59,12 @@ class InvoiceAPIView(APIView):
 
             total_amount = 0
             for detail in details_data:
-                detail['quantity'] = int(detail['quantity'])  # Ensure integer
-                detail['unit_price'] = Decimal(detail['unit_price'])  # Ensure decimal
+                detail['quantity'] = int(detail['quantity']) 
+                detail['unit_price'] = Decimal(detail['unit_price'])
                 detail['line_total'] = detail['quantity'] * detail['unit_price']
 
                 InvoiceDetail.objects.update_or_create(
-                    invoice=invoice,  # Pass the Invoice instance here
+                    invoice=invoice, 
                     description=detail['description'],
                     defaults={
                         'quantity': detail['quantity'],
