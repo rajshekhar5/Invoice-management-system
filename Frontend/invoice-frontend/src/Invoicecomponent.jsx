@@ -13,7 +13,7 @@ const InvoiceManager = () => {
   });
   const [isUpdating, setIsUpdating] = useState(false);
 
-  const API_URL = 'http://127.0.0.1:8000/api/invoices/';
+  const API_URL = 'https://invoice-management-system-hd58.onrender.com/api/invoices/';
 
   // Fetch invoices
   const fetchInvoices = async () => {
