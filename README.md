@@ -34,7 +34,7 @@ This is an **Invoice Management System** built using **React**, **Tailwind CSS**
 ### Frontend Deployment
 The frontend is deployed on **Vercel** for production use. The deployed app can be accessed at:
 
-[Invoice Management System - Vercel](https://invoice-management-system-rho.vercel.app)
+[Invoice Management System - Vercel](https://invoice-management-system-fdy8.vercel.app/)
 
 ### Backend Deployment
 Currently, the backend has been containerized using Docker, but deployment of the backend was not successful. The Dockerized backend is still available for local testing.
@@ -133,5 +133,6 @@ To run the frontend tests using **Jest**, navigate to the frontend directory and
 npm test
 ```
 
-## Known Issues
-- The backend has been Dockerized but was not successfully deployed to production.
+
+- The backend and Frontend has been Dockerized and successfully deployed to production.
+  https://invoice-management-system-fdy8.vercel.app/
